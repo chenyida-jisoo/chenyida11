@@ -1,4 +1,6 @@
-package com.example.seventhhomework;
+package com.example.shopping;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,14 +20,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.seventhhomework.bean.CartInfo;
-import com.example.seventhhomework.bean.GoodsInfo;
-import com.example.seventhhomework.database.CartDBHelper;
-import com.example.seventhhomework.database.GoodsDBHelper;
-import com.example.seventhhomework.util.DateUtil;
-import com.example.seventhhomework.util.FileUtil;
-import com.example.seventhhomework.util.SharedUtil;
-import com.example.seventhhomework.util.Utils;
+import com.example.shopping.bean.CartInfo;
+import com.example.shopping.bean.GoodsInfo;
+import com.example.shopping.database.CartDBHelper;
+import com.example.shopping.database.GoodsDBHelper;
+import com.example.shopping.util.DateUtil;
+import com.example.shopping.util.FileUtil;
+import com.example.shopping.util.SharedUtil;
+import com.example.shopping.util.Utils;
 
 import java.util.ArrayList;
 
@@ -48,14 +50,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_count = findViewById(R.id.tv_count);
         ll_channel = findViewById(R.id.ll_channel);
         findViewById(R.id.iv_cart).setOnClickListener(this);
-        tv_title.setText("服装商城");
+        tv_title.setText("陈奕达的商场");
     }
 
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.iv_cart) { // 点击了购物车图标
             // 跳转到购物车页面
-            Intent intent = new Intent(this, ShoppingCartActivity.class);
+            Intent intent = new Intent(this, ShoppingCartProActivity.class);
             startActivity(intent);
         }
     }
