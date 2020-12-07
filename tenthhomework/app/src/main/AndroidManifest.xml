@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tenthhomewowrk"
+    android:installLocation="auto">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.tenthhomewowrk.ViewFlipperActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name="com.example.tenthhomewowrk.ToolbarCustomActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name="com.example.tenthhomewowrk.ToolbarActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity android:name="com.example.tenthhomewowrk.TabThirdActivity" />
+        <activity android:name="com.example.tenthhomewowrk.TabSecondActivity" />
+        <activity
+            android:name="com.example.tenthhomewowrk.TabHostActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.tenthhomewowrk.TabGroupActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.tenthhomewowrk.TabFragmentActivity"
+            android:exported="true" />
+        <activity android:name="com.example.tenthhomewowrk.TabFirstActivity" />
+        <activity
+            android:name="com.example.tenthhomewowrk.TabLayoutActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name="com.example.tenthhomewowrk.TabCustomActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name="com.example.tenthhomewowrk.TabButtonActivity"
+            android:exported="true" />
+        <activity android:name="com.example.tenthhomewowrk.SwipeRefreshActivity" />
+        <activity android:name="com.example.tenthhomewowrk.SwipeRecyclerActivity" />
+        <activity
+            android:name="com.example.tenthhomewowrk.SearchViewActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name="com.example.tenthhomewowrk.SearchResultActvity"
+            android:theme="@style/AppCompatTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="com.example.tenthhomewowrk.RecyclerStaggeredActivity" />
+        <activity android:name="com.example.tenthhomewowrk.RecyclerLinearActivity" />
+        <activity android:name="com.example.tenthhomewowrk.RecyclerGridActivity" />
+        <activity android:name="com.example.tenthhomewowrk.RecyclerDynamicActivity" />
+        <activity android:name="com.example.tenthhomewowrk.RecyclerCombineActivity" />
+        <activity
+            android:name="com.example.tenthhomewowrk.OverflowMenuActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name="com.example.tenthhomewowrk.BannerTopActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name="com.example.tenthhomewowrk.BannerPagerActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name="com.example.tenthhomewowrk.BannerIndicatorActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity android:name="com.example.tenthhomewowrk.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
